@@ -1,6 +1,6 @@
 type: scene
 metadata:
-  name: Park Meeting
+  name: park-meeting
 spec:
   dataPrompt: '@hero meets @sidekick in a sunny park with green grass and a bench'
   dataPromptNegative: dark, rainy, scary
