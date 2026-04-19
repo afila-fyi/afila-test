@@ -2,7 +2,7 @@ type: character
 metadata:
   name: Hero
 spec:
-  dataPrompt: A young boy with short brown hair, wearing a simple white t-shirt and blue jeans, friendly smile
+  dataPrompt: A young boy with short brown hair and a cowlick, wearing a simple white t-shirt and blue jeans, friendly smile, Tintin-style ligne claire cartoon, clean bold outlines, flat cel-shaded colors, European comic book illustration
   dataPromptNegative: blurry, low quality, deformed
 status:
   success: false
