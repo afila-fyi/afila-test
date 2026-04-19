@@ -5,7 +5,6 @@ spec:
   dataPrompt: A scruffy little grey terrier dog with floppy ears and a red bandana around its neck, happy panting face, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
   dataPromptNegative: realistic, scary, dark
 status:
-  success: false
-  reference: ""
-  generatedTime: ""
-  error: ""
+  success: true
+  reference: assets/characters/Sidekick.png
+  generatedTime: '2026-04-19T22:43:06.134Z'
