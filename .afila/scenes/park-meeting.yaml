@@ -2,7 +2,7 @@ type: scene
 metadata:
   name: Park Meeting
 spec:
-  dataPrompt: "@hero meets @sidekick in a sunny park with green grass and a bench"
+  dataPrompt: '@hero meets @sidekick in a sunny park with green grass and a bench'
   dataPromptNegative: dark, rainy, scary
   characters:
     - name: hero
@@ -10,19 +10,17 @@ spec:
   shots:
     - name: wide-shot
       dataPrompt: Wide shot of a sunny park with a wooden bench under a tree
-      dataPromptNegative: ""
+      dataPromptNegative: ''
       duration: 5
     - name: meeting
-      dataPrompt: "@hero sees @sidekick sitting on the bench and walks towards it"
-      dataPromptNegative: ""
+      dataPrompt: '@hero sees @sidekick sitting on the bench and walks towards it'
+      dataPromptNegative: ''
       duration: 5
   options:
     target: video
     duration: 10
-    aspectRatio: "16:9"
+    aspectRatio: '16:9'
     resolution: 1080p
 status:
   success: false
-  reference: ""
-  generatedTime: ""
-  error: ""
+  error: Request failed with status code 500
