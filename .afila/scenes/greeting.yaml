@@ -9,7 +9,7 @@ spec:
     - name: sidekick
   shots:
     - name: closeup
-      dataPrompt: Close-up of the boy gently picking up the cat, both looking happy
+      dataPrompt: "Close-up of @hero gently picking up @sidekick, both looking happy"
       dataPromptNegative: ""
       duration: 5
   options:
@@ -18,7 +18,7 @@ spec:
     aspectRatio: "16:9"
     resolution: 720p
 status:
-  success: true
-  reference: assets/scenes/greeting.mp4
-  generatedTime: "2026-04-19T13:58:00.000Z"
+  success: false
+  reference: ""
+  generatedTime: ""
   error: ""

@@ -13,7 +13,7 @@ spec:
       dataPromptNegative: ""
       duration: 5
     - name: meeting
-      dataPrompt: The boy sees the cat sitting on the bench and walks towards it
+      dataPrompt: "@hero sees @sidekick sitting on the bench and walks towards it"
       dataPromptNegative: ""
       duration: 5
   options:
@@ -22,7 +22,7 @@ spec:
     aspectRatio: "16:9"
     resolution: 1080p
 status:
-  success: true
-  reference: assets/scenes/park-meeting.mp4
-  generatedTime: "2026-04-19T13:58:00.000Z"
+  success: false
+  reference: ""
+  generatedTime: ""
   error: ""
