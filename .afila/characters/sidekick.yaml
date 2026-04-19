@@ -2,7 +2,7 @@ type: character
 metadata:
   name: Sidekick
 spec:
-  dataPrompt: A small orange tabby cat with big green eyes, sitting upright, Tintin-style ligne claire cartoon, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPrompt: A scruffy little grey terrier dog with floppy ears and a red bandana around its neck, happy panting face, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
   dataPromptNegative: realistic, scary, dark
 status:
   success: false

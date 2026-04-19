@@ -2,7 +2,7 @@ type: character
 metadata:
   name: Hero
 spec:
-  dataPrompt: A young boy with short brown hair and a cowlick, wearing a simple white t-shirt and blue jeans, friendly smile, Tintin-style ligne claire cartoon, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPrompt: A 10-year-old girl with curly black hair in two puffs, wearing a red hoodie and green cargo shorts, cheerful expression, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
   dataPromptNegative: blurry, low quality, deformed
 status:
   success: false
