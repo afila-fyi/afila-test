@@ -5,7 +5,6 @@ spec:
   dataPrompt: A young boy with short brown hair, wearing a simple white t-shirt and blue jeans, friendly smile
   dataPromptNegative: blurry, low quality, deformed
 status:
-  success: false
-  reference: ""
-  generatedTime: ""
-  error: ""
+  success: true
+  reference: assets/characters/Hero.png
+  generatedTime: '2026-04-19T22:24:32.740Z'
