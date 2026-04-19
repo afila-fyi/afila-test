@@ -1,0 +1,11 @@
+type: character
+metadata:
+  name: Sidekick
+spec:
+  dataPrompt: A small orange cat with big green eyes, sitting upright, cartoon style
+  dataPromptNegative: realistic, scary, dark
+status:
+  success: false
+  reference: ""
+  generatedTime: ""
+  error: ""
