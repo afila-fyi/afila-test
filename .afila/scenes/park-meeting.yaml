@@ -22,7 +22,7 @@ spec:
     aspectRatio: "16:9"
     resolution: 1080p
 status:
-  success: false
-  reference: ""
-  generatedTime: ""
+  success: true
+  reference: assets/scenes/park-meeting.mp4
+  generatedTime: "2026-04-19T13:58:00.000Z"
   error: ""

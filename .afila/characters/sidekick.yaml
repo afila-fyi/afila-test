@@ -5,7 +5,7 @@ spec:
   dataPrompt: A small orange cat with big green eyes, sitting upright, cartoon style
   dataPromptNegative: realistic, scary, dark
 status:
-  success: false
-  reference: ""
-  generatedTime: ""
+  success: true
+  reference: assets/characters/sidekick.png
+  generatedTime: "2026-04-19T13:58:00.000Z"
   error: ""
