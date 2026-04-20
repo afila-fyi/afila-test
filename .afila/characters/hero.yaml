@@ -6,5 +6,5 @@ spec:
   dataPromptNegative: blurry, low quality, deformed
 status:
   success: true
-  reference: assets/characters/Hero.jpg
+  reference: https://afilastore.blob.core.windows.net/assets/prashantchari/afila-test/characters/Hero.jpg
   generatedTime: '2026-04-19T22:42:48.918Z'

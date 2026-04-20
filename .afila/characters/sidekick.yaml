@@ -6,5 +6,5 @@ spec:
   dataPromptNegative: realistic, scary, dark
 status:
   success: true
-  reference: assets/characters/Sidekick.jpg
+  reference: https://afilastore.blob.core.windows.net/assets/prashantchari/afila-test/characters/Sidekick.jpg
   generatedTime: '2026-04-19T22:43:06.134Z'
