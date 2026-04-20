@@ -22,5 +22,6 @@ spec:
     aspectRatio: '16:9'
     resolution: 1080p
 status:
-  success: false
-  error: Request failed with status code 500
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/prashantchari/afila-test/69e5d562765e204ffd42ba95/scenes/park-meeting.mp4
+  generatedTime: '2026-04-20T07:42:13.212Z'
