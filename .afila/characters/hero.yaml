@@ -1,0 +1,10 @@
+type: character
+metadata:
+  name: Hero
+spec:
+  dataPrompt: A 10-year-old girl with curly black hair in two puffs, wearing a red hoodie and green cargo shorts, cheerful expression, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/prashantchari/afila-test/characters/Hero.jpg
+  generatedTime: '2026-04-19T22:42:48.918Z'

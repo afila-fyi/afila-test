@@ -1,0 +1,20 @@
+type: scene
+metadata:
+  name: Greeting
+spec:
+  dataPrompt: '@hero picks up @sidekick and they smile together'
+  dataPromptNegative: violence, dark, scary
+  shots:
+    - name: closeup
+      dataPrompt: Close-up of @hero gently picking up @sidekick, both looking happy
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    target: video
+    duration: 5
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/prashantchari/afila-test/69e5d562765e204ffd42ba95/scenes/Greeting.mp4
+  generatedTime: '2026-04-20T07:32:05.902Z'

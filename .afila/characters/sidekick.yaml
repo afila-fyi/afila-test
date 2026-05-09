@@ -1,0 +1,10 @@
+type: character
+metadata:
+  name: Sidekick
+spec:
+  dataPrompt: A scruffy little grey terrier dog with floppy ears and a red bandana around its neck, happy panting face, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: realistic, scary, dark
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/prashantchari/afila-test/characters/Sidekick.jpg
+  generatedTime: '2026-04-19T22:43:06.134Z'
