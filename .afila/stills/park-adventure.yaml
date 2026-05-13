@@ -1,0 +1,13 @@
+type: still
+metadata:
+  name: park-adventure
+spec:
+  dataPrompt: >-
+    @Hero and @Sidekick running through a sunny park with tall oak trees,
+    autumn leaves swirling in the air, warm golden hour lighting,
+    ligne claire cartoon style, clean bold outlines, flat cel-shaded colors,
+    European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, dark
+  options:
+    outputFormat: png
+    aspectRatio: "16:9"
