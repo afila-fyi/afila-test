@@ -2,12 +2,12 @@ type: still
 metadata:
   name: park-adventure
 spec:
-  dataPrompt: >-
-    @Hero and @Sidekick running through a sunny park with tall oak trees,
-    autumn leaves swirling in the air, warm golden hour lighting,
-    ligne claire cartoon style, clean bold outlines, flat cel-shaded colors,
-    European comic book illustration
+  dataPrompt: '@Hero and @Sidekick running through a sunny park with tall oak trees, autumn leaves swirling in the air, warm golden hour lighting, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration'
   dataPromptNegative: blurry, low quality, deformed, realistic, dark
   options:
     outputFormat: png
-    aspectRatio: "16:9"
+    aspectRatio: '16:9'
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a041780ae941261245c5d55/stills/park-adventure.png
+  generatedTime: '2026-05-13T06:20:03.378Z'
