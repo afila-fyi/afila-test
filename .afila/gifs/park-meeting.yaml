@@ -14,7 +14,6 @@ spec:
       dataPromptNegative: ''
       duration: 5
   options:
-    target: video
     duration: 10
     aspectRatio: '16:9'
     resolution: 1080p
