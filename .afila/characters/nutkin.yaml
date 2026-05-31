@@ -1,0 +1,6 @@
+type: character
+metadata:
+  name: Nutkin
+spec:
+  dataPrompt: A plump red squirrel with a bushy tail and bright curious eyes, holding an acorn in its tiny paws, mischievous grin, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, scary
