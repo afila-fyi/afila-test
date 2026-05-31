@@ -4,3 +4,7 @@ metadata:
 spec:
   dataPrompt: A plump red squirrel with a bushy tail and bright curious eyes, holding an acorn in its tiny paws, mischievous grin, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
   dataPromptNegative: blurry, low quality, deformed, realistic, scary
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a1c91e4ae941261245c5d74/characters/Nutkin.png
+  generatedTime: '2026-05-31T19:54:46.974Z'
