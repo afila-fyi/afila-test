@@ -1,0 +1,14 @@
+type: still
+metadata:
+  name: hero-and-sidekick-park
+spec:
+  dataPrompt: >
+    @Hero and @Sidekick standing together on a sunlit grassy hill in a park,
+    tall oak trees in the background with golden autumn leaves,
+    warm golden hour lighting casting long soft shadows,
+    ligne claire cartoon style, clean bold outlines, flat cel-shaded colors,
+    European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, dark, scary
+  options:
+    outputFormat: png
+    aspectRatio: "16:9"

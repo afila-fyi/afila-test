@@ -1,0 +1,19 @@
+type: scene
+metadata:
+  name: park-walk
+spec:
+  dataPrompt: >
+    Tracking shot following @Hero and @Sidekick,
+    walking side by side along a winding park path,
+    @Hero laughs and says "Come on, let's explore!",
+    @Sidekick barks excitedly and runs ahead,
+    @Nutkin leaps between branches overhead and chittering drops an acorn
+    that bounces off @Hero's head, she looks up surprised and giggles,
+    surrounded by tall oak trees with golden autumn leaves drifting down,
+    warm golden hour lighting, soft lens flare,
+    SFX: crunching leaves underfoot, birds chirping, squirrel chittering,
+    cinematic, ligne claire cartoon style animated
+  sourceImage: "@hero-and-sidekick-park"
+  options:
+    resolution: 720p
+    generateAudio: true
