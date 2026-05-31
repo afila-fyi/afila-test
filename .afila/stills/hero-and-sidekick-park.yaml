@@ -2,13 +2,13 @@ type: still
 metadata:
   name: hero-and-sidekick-park
 spec:
-  dataPrompt: >
-    @Hero and @Sidekick standing together on a sunlit grassy hill in a park,
-    tall oak trees in the background with golden autumn leaves,
-    warm golden hour lighting casting long soft shadows,
-    ligne claire cartoon style, clean bold outlines, flat cel-shaded colors,
-    European comic book illustration
+  dataPrompt: |
+    @Hero and @Sidekick standing together on a sunlit grassy hill in a park, tall oak trees in the background with golden autumn leaves, warm golden hour lighting casting long soft shadows, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
   dataPromptNegative: blurry, low quality, deformed, realistic, dark, scary
   options:
     outputFormat: png
-    aspectRatio: "16:9"
+    aspectRatio: '16:9'
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a1c91e4ae941261245c5d74/stills/hero-and-sidekick-park.png
+  generatedTime: '2026-05-31T19:55:26.278Z'
