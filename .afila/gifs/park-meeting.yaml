@@ -2,15 +2,23 @@ type: gif
 metadata:
   name: park-meeting
 spec:
-  dataPrompt: '@hero meets @sidekick in a sunny park with green grass and a bench'
+  dataPrompt: >
+    @hero meets @sidekick in a sunny park with green grass and a bench,
+    warm afternoon light, birds singing
   dataPromptNegative: dark, rainy, scary
   shots:
     - name: wide-shot
-      dataPrompt: Wide shot of a sunny park with a wooden bench under a tree
+      dataPrompt: >
+        Wide shot of a sunny park with a wooden bench under a tree,
+        SFX: birds chirping, gentle breeze rustling leaves
       dataPromptNegative: ''
       duration: 5
     - name: meeting
-      dataPrompt: '@hero sees @sidekick sitting on the bench and walks towards it'
+      dataPrompt: >
+        @hero spots @sidekick sitting on the bench and runs over,
+        @hero says excitedly "There you are! I've been looking everywhere!",
+        @sidekick barks happily and wags its tail,
+        SFX: footsteps on grass, joyful dog barking
       dataPromptNegative: ''
       duration: 5
   options:
