@@ -4,3 +4,7 @@ metadata:
 spec:
   dataPrompt: A realistic garden snail with a prominent spiraling shell featuring natural brown and tan swirl patterns, moist glistening body with textured skin, two pairs of tentacles with small eyes on the upper stalks, crawling on a mossy surface, soft natural lighting, photorealistic style, macro photography detail
   dataPromptNegative: cartoon, anime, stylized, blurry, low quality, deformed, unrealistic colors
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a2592194f8add99be5c269b/characters/Snail.png
+  generatedTime: '2026-06-07T15:46:01.392Z'
