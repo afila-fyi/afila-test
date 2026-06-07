@@ -1,0 +1,28 @@
+type: scene
+metadata:
+  name: tropical-voyage
+spec:
+  dataPrompt: |
+    @snail rides on @whale's tail as they travel through a vibrant tropical ocean, an active volcano smokes in the background on a lush green island, dolphins leap and splash around them, a monkey watches from a palm tree on a nearby island, warm golden sunlight, photorealistic style
+  dataPromptNegative: dark, scary, blurry, low quality, cartoon, anime
+  shots:
+    - name: riding-together
+      dataPrompt: |
+        Medium shot of @snail perched happily on @whale's tail fluke as @whale swims through crystal-clear turquoise tropical water, both looking joyful, sunlight glinting off the water surface, SFX: gentle ocean waves, whale song
+      dataPromptNegative: ''
+      duration: 5
+    - name: dolphins-and-volcano
+      dataPrompt: |
+        Wide shot pulling back to reveal the full tropical scene, dolphins jumping and splashing playfully around @whale and @snail, an active volcano with smoke rising from its peak on a lush green island in the background, vibrant coral reefs visible beneath the water, SFX: dolphins clicking and chirping, distant volcanic rumble, splashing water
+      dataPromptNegative: ''
+      duration: 5
+    - name: monkey-on-island
+      dataPrompt: |
+        Camera zooms out further to show a small tropical island with a tall palm tree in the foreground, a curious monkey sitting on a branch watching @whale and @snail swim past with the dolphins, the smoking volcano behind them on the horizon, golden sunset light across the whole scene, SFX: monkey chatter, tropical birds, gentle waves lapping the shore
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 15
+    aspectRatio: '16:9'
+    resolution: 1080p
+    enableAudio: true
