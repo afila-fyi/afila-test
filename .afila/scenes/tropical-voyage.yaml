@@ -4,21 +4,21 @@ metadata:
 spec:
   dataPrompt: |
     @snail rides on @whale's tail as they swim through a tropical ocean, an active volcano in the background, two dolphins jump once, a monkey watches from a palm tree on a nearby island, warm golden sunlight, photorealistic style
-  dataPromptNegative: dark, scary, blurry, low quality, cartoon, anime, many dolphins, pod of dolphins
+  dataPromptNegative: dark, scary, blurry, low quality, cartoon, anime, many dolphins, pod of dolphins, background music, soundtrack, musical score
   shots:
     - name: riding-together
       dataPrompt: |
-        Shot 1 (5s): Medium shot, @snail sits on @whale's tail fluke as @whale swims forward through crystal-clear turquoise tropical water. @whale and @snail stay in the water the entire time. Sunlight glints off the ocean surface. Camera holds steady on the pair. SFX: gentle ocean waves, whale song.
+        Shot 1 (5s): Medium shot, @snail sits on @whale's tail fluke as @whale swims forward through crystal-clear turquoise tropical water. @whale and @snail stay in the water the entire time. Sunlight glints off the ocean surface. Camera holds steady on the pair. SFX: natural sounds only, gentle ocean waves, whale song. No background music.
       dataPromptNegative: ''
       duration: 5
     - name: dolphins-and-volcano
       dataPrompt: |
-        Shot 2 (5s): Wide shot, camera pulls back. @whale swims in the water with @snail still on its tail. Exactly two dolphins leap out of the water once in an arc and splash back down on either side of @whale. An active volcano with thick smoke rising from its peak sits on a lush green island in the background. SFX: two dolphin splashes, distant volcanic rumble.
+        Shot 2 (5s): Wide shot, camera pulls back. @whale swims in the water with @snail still on its tail. Exactly two dolphins leap out of the water once in an arc and splash back down on either side of @whale. An active volcano with thick smoke rising from its peak sits on a lush green island in the background. SFX: natural sounds only, two dolphin splashes, distant volcanic rumble. No background music.
       dataPromptNegative: ''
       duration: 5
     - name: monkey-on-island
       dataPrompt: |
-        Shot 3 (5s): Camera zooms out to a wide establishing shot. In the foreground, a small tropical island with a tall palm tree where a curious monkey sits on a branch, watching. In the water behind the island, @whale swims with @snail on its tail, the two dolphins gliding alongside. The smoking volcano rises on the horizon. Golden sunset light. SFX: monkey chatter, tropical birds, gentle waves.
+        Shot 3 (5s): Camera zooms out to a wide establishing shot. In the foreground, a small tropical island with a tall palm tree where a curious monkey sits on a branch, watching. In the water behind the island, @whale swims with @snail on its tail, the two dolphins gliding alongside. The smoking volcano rises on the horizon. Golden sunset light. SFX: natural sounds only, monkey chatter, tropical birds, gentle waves. No background music.
       dataPromptNegative: ''
       duration: 5
   options:
