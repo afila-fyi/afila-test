@@ -4,3 +4,7 @@ metadata:
 spec:
   dataPrompt: A realistic medium-sized orca killer whale with distinctive black and white coloring, sleek streamlined body, tall dorsal fin, white eye patch and saddle patch markings, swimming gracefully in clear blue ocean water, natural underwater lighting, photorealistic style, wildlife photography detail
   dataPromptNegative: cartoon, anime, stylized, blurry, low quality, deformed, unrealistic proportions
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a2592194f8add99be5c269b/characters/Whale.png
+  generatedTime: '2026-06-07T15:46:18.398Z'
