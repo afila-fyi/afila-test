@@ -26,3 +26,7 @@ spec:
     aspectRatio: '16:9'
     resolution: 1080p
     enableAudio: true
+status:
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a2593fa4f8add99be5c26ac/scenes/tropical-voyage.mp4
+  generatedTime: '2026-06-07T16:01:31.843Z'
