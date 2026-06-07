@@ -27,4 +27,6 @@ spec:
     resolution: 1080p
     enableAudio: true
 status:
-  success: false
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a25fa7dfadee900e20a16d6/scenes/tropical-voyage.mp4
+  generatedTime: '2026-06-07T23:17:19.788Z'
