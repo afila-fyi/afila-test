@@ -1,0 +1,6 @@
+type: character
+metadata:
+  name: Snail
+spec:
+  dataPrompt: A realistic garden snail with a prominent spiraling shell featuring natural brown and tan swirl patterns, moist glistening body with textured skin, two pairs of tentacles with small eyes on the upper stalks, crawling on a mossy surface, soft natural lighting, photorealistic style, macro photography detail
+  dataPromptNegative: cartoon, anime, stylized, blurry, low quality, deformed, unrealistic colors

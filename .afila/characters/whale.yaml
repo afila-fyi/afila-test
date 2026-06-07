@@ -1,0 +1,6 @@
+type: character
+metadata:
+  name: Whale
+spec:
+  dataPrompt: A realistic medium-sized orca killer whale with distinctive black and white coloring, sleek streamlined body, tall dorsal fin, white eye patch and saddle patch markings, swimming gracefully in clear blue ocean water, natural underwater lighting, photorealistic style, wildlife photography detail
+  dataPromptNegative: cartoon, anime, stylized, blurry, low quality, deformed, unrealistic proportions
