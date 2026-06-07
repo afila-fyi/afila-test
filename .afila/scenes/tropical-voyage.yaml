@@ -13,12 +13,12 @@ spec:
       duration: 5
     - name: dolphins-and-volcano
       dataPrompt: |
-        Shot 2 (5s): Wide shot, camera pulls back. @whale swims in the water with @snail still on its tail. Exactly two dolphins leap out of the water once in an arc and splash back down on either side of @whale. An active volcano with thick smoke rising from its peak sits on a lush green island in the background. SFX: natural sounds only, two dolphin splashes, distant volcanic rumble. No background music.
+        Shot 2 (5s): Wide shot, camera pulls back. @whale swims in the water with @snail still on its tail. Two dolphins surface briefly nearby, breaking the water naturally before diving back under. An active volcano with thick smoke rising from its peak sits on a lush green island in the background. SFX: natural sounds only, soft dolphin splashes, distant volcanic rumble. No background music.
       dataPromptNegative: ''
       duration: 5
     - name: monkey-on-island
       dataPrompt: |
-        Shot 3 (5s): Camera zooms out to a wide establishing shot. In the foreground, a small tropical island with a tall palm tree where a curious monkey sits on a branch, watching. In the water behind the island, @whale swims with @snail on its tail, the two dolphins gliding alongside. The smoking volcano rises on the horizon. Golden sunset light. SFX: natural sounds only, monkey chatter, tropical birds, gentle waves. No background music.
+        Shot 3 (5s): Camera zooms out to a wide establishing shot. In the foreground, a small tropical island with a tall palm tree where a curious monkey sits on a branch, watching. In the water behind the island, @whale swims peacefully with @snail on its tail. The smoking volcano rises on the horizon. Golden sunset light. SFX: natural sounds only, monkey chatter, tropical birds, gentle waves. No background music.
       dataPromptNegative: ''
       duration: 5
   options:
