@@ -13,7 +13,7 @@ spec:
       duration: 5
     - name: dolphins-and-volcano
       dataPrompt: |
-        Shot 2 (5s): Wide shot, camera pulls back. @whale swims in the water with @snail still on its tail. Two dolphins surface briefly nearby, breaking the water naturally before diving back under. An active volcano with thick smoke rising from its peak sits on a lush green island in the background. SFX: natural sounds only, soft dolphin splashes, distant volcanic rumble. No background music.
+        Shot 2 (5s): Wide shot, camera pulls back. @whale swims fully submerged beneath the ocean surface with @snail still on its tail, visible through the clear turquoise water. Two dolphins surface briefly nearby, breaking the water naturally before diving back under. An active volcano with thick smoke rising from its peak sits on a lush green island in the background. SFX: natural sounds only, soft dolphin splashes, distant volcanic rumble. No background music.
       dataPromptNegative: ''
       duration: 5
     - name: monkey-on-island
@@ -27,6 +27,6 @@ spec:
     resolution: 1080p
     enableAudio: true
 status:
-  success: true
+  success: false
   reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a25fa7dfadee900e20a16d6/scenes/tropical-voyage.mp4
   generatedTime: '2026-06-07T23:17:19.788Z'
