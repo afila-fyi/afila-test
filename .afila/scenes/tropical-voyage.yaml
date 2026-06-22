@@ -8,7 +8,7 @@ spec:
   shots:
     - name: riding-together
       dataPrompt: |
-        Shot 1 (5s): Underwater medium close-up, 50mm lens equivalent, camera positioned 2 meters below the ocean surface tracking laterally alongside @whale. @snail clings to the broad flat surface of @whale's tail fluke as @whale glides forward with slow, powerful strokes. Shafts of late-afternoon sunlight pierce the water from above, casting rippling caustic patterns across @whale's dark blue-grey skin. Tiny air bubbles trail from @whale's blowhole. The water is crystal-clear turquoise with visible plankton particles drifting in the light beams. Camera drifts gently with the ocean current, maintaining pace with the pair. Depth of field keeps @snail and the tail sharp while the open ocean behind softens into deep blue. SFX: muffled underwater ambiance, low resonant whale song reverberating through the water, soft rush of water flowing over @whale's body. No background music.
+        Shot 1 (5s): Underwater medium close-up, 50mm lens, camera 2 meters below the surface tracking laterally alongside @whale. @snail clings to @whale's tail fluke as @whale glides forward with slow powerful strokes. Late-afternoon sunlight pierces the water from above, casting caustic patterns across @whale's blue-grey skin. Tiny bubbles trail from @whale's blowhole. Crystal-clear turquoise water with plankton drifting in the light beams. Camera drifts with the current, keeping pace. Shallow depth of field — @snail and tail sharp, open ocean softens to deep blue behind. SFX: muffled underwater ambiance, resonant whale song, soft water rush. No background music.
       dataPromptNegative: ''
       duration: 5
     - name: dolphins-and-volcano
