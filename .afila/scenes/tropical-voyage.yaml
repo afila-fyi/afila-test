@@ -8,17 +8,17 @@ spec:
   shots:
     - name: riding-together
       dataPrompt: |
-        Shot 1 (5s): Underwater medium close-up, 50mm lens, camera 2 meters below the surface tracking laterally alongside @whale. @snail clings to @whale's tail fluke as @whale glides forward with slow powerful strokes. Late-afternoon sunlight pierces the water from above, casting caustic patterns across @whale's blue-grey skin. Tiny bubbles trail from @whale's blowhole. Crystal-clear turquoise water with plankton drifting in the light beams. Camera drifts with the current, keeping pace. Shallow depth of field — @snail and tail sharp, open ocean softens to deep blue behind. SFX: muffled underwater ambiance, resonant whale song, soft water rush. No background music.
+        Shot 1 (5s): Underwater medium close-up, 50mm lens, camera 2m below surface tracking alongside @whale. @snail clings to @whale's tail fluke as @whale glides with powerful strokes. Late-afternoon sunlight pierces the water, casting caustics on @whale's blue-grey skin. Bubbles trail from @whale's blowhole. Clear turquoise water, plankton in light beams. Camera keeps pace. Shallow DOF — @snail sharp, background fades to deep blue. SFX: muffled underwater ambiance, whale song, water rush. No music.
       dataPromptNegative: ''
       duration: 5
     - name: dolphins-and-volcano
       dataPrompt: |
-        Shot 2 (5s): Split-level half-underwater shot, lens half submerged at the waterline. Below the surface, @whale glides fully submerged at 3 meters depth with @snail on its tail, visible through gin-clear water with light refractions dancing on the sandy floor. Above the waterline, two bottlenose dolphins arc in a synchronised leap, wet grey skin catching golden-hour sunlight, droplets scattering mid-air before splashing back down. Background reveals a dark conical volcanic peak with ash-grey smoke billowing from its crater, lush jungle at its base. Camera holds static, letting action play in both halves of the frame. SFX: dolphin splashes, distant volcanic rumble, gentle wave lapping. No background music.
+        Shot 2 (5s): Split-level waterline shot, lens half submerged. Below: @whale glides submerged at 3m depth with @snail on its tail, visible through clear water with light refractions on sandy floor. Above: two dolphins arc in a synchronised leap, grey skin catching golden-hour sun, droplets mid-air. Background: dark conical volcano with smoke from crater, jungle at base. Camera static at water level. SFX: dolphin splashes, distant volcanic rumble, wave lapping. No music.
       dataPromptNegative: ''
       duration: 5
     - name: monkey-on-island
       dataPrompt: |
-        Shot 3 (5s): Wide establishing shot, camera elevated 10 meters on a slow push-in toward a small tropical island. A coconut palm leans over turquoise shallows in the left foreground — perched on its lowest frond a capuchin monkey grips the branch, head tilted, watching the ocean with alert dark eyes. In the mid-ground, @whale's dark silhouette glides just beneath the glassy surface with @snail on its tail, a faint wake trailing behind. The volcanic island looms on the distant horizon, its smoke column lit orange-pink by the setting sun. Golden-hour light bathes the scene, long shadows on white sand. Camera dollies forward over 5 seconds. SFX: monkey chittering, distant hornbill call, rustling palm fronds, waves lapping shore. No background music.
+        Shot 3 (5s): Wide shot, camera elevated 10m, slow push-in toward a tropical island. Coconut palm leans over turquoise shallows — on its lowest frond a capuchin monkey grips the branch, head tilted, watching the sea. Mid-ground: @whale's silhouette glides beneath the glassy surface with @snail on tail, wake trailing. Volcano on horizon, smoke column lit orange-pink by setting sun. Golden-hour light, long shadows on white sand. Camera dollies forward. SFX: monkey chitter, hornbill, rustling palms, lapping waves. No music.
       dataPromptNegative: ''
       duration: 5
   options:
