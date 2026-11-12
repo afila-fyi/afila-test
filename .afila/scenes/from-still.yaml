@@ -1,0 +1,21 @@
+type: scene
+metadata:
+  name: from-still
+spec:
+  dataPrompt: |
+    Animate the opening frame: @hero and @sidekick on the sunlit hill, leaves drifting in the breeze
+  dataPromptNegative: dark, scary, blurry, style change
+  shots:
+    - name: animate
+      dataPrompt: |
+        Shot 1 (8s): Starting exactly from the first frame, @hero turns to @sidekick and laughs, @sidekick jumps up excitedly, leaves swirl around them, camera slowly pushes in. SFX: wind, leaves rustling, happy bark. No background music.
+      dataPromptNegative: ''
+      duration: 8
+  keyframes:
+    first: hero-and-sidekick-park
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 1080p
+status:
+  success: false

@@ -1,0 +1,24 @@
+type: scene
+metadata:
+  name: dialogue-and-audio
+spec:
+  dataPrompt: |
+    @hero and @sidekick share a quiet moment on the park bench. Audio direction goes in the prompt: Hero speaks in a bright, young, warm voice; a narrator speaks in a warm, deep, unhurried male voice.
+  dataPromptNegative: dark, scary, blurry, low quality, background music, soundtrack, subtitles, captions, shouting
+  shots:
+    - name: narration
+      dataPrompt: |
+        Shot 1 (5s): Wide shot of the bench in golden light. Narrator, warm deep male voice, says calmly: "Every afternoon, they met at the same bench." SFX: soft breeze, distant birds. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: conversation
+      dataPrompt: |
+        Shot 2 (5s): Close-up, @hero, bright young voice, whispers: "Do you think the whale remembers us?" @sidekick tilts its head and gives a soft woof. SFX: rustling leaves, gentle woof. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false

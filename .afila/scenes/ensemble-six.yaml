@@ -1,0 +1,24 @@
+type: scene
+metadata:
+  name: ensemble-six
+spec:
+  dataPrompt: |
+    @hero, @sidekick, @nutkin, @snail and @whale gather together, plus the scenery from @park-adventure, a warm celebration at the water's edge
+  dataPromptNegative: dark, scary, blurry, low quality, extra characters, duplicate characters
+  shots:
+    - name: gathering
+      dataPrompt: |
+        Shot 1 (5s): Wide shot, @hero and @sidekick arrive at the shore of the park lake, @nutkin waves from a branch, @snail sits on a rock. @whale surfaces in the water behind them. SFX: ambient lake sounds, birds. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: celebration
+      dataPrompt: |
+        Shot 2 (5s): Medium shot, everyone cheers together, @hero says "We made it, all of us!", @sidekick barks, @whale blows a gentle spout. SFX: cheering, splash, bark. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false

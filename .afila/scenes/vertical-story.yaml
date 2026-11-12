@@ -1,0 +1,24 @@
+type: scene
+metadata:
+  name: vertical-story
+spec:
+  dataPrompt: |
+    @hero shows @sidekick to the camera in a vertical, phone-style video, sunny park, ligne claire cartoon style
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark
+  shots:
+    - name: intro
+      dataPrompt: |
+        Shot 1 (5s): Vertical medium shot, @hero holds up @sidekick toward the camera, @hero says cheerfully "Meet my best friend!". SFX: birds chirping. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: reaction
+      dataPrompt: |
+        Shot 2 (5s): Close-up, @sidekick licks @hero's cheek and she laughs. SFX: happy bark, giggling. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '9:16'
+    resolution: 720p
+status:
+  success: false

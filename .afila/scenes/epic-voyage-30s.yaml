@@ -1,0 +1,44 @@
+type: scene
+metadata:
+  name: epic-voyage-30s
+spec:
+  dataPrompt: |
+    @snail rides on @whale's tail on a long tropical voyage from sunrise to night, photorealistic, warm light
+  dataPromptNegative: dark, scary, blurry, low quality, cartoon, anime, background music, soundtrack
+  shots:
+    - name: sunrise
+      dataPrompt: |
+        Shot 1 (5s): Wide shot at sunrise, @whale swims through calm golden water with @snail on its tail. SFX: gentle waves, whale song. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: reef
+      dataPrompt: |
+        Shot 2 (5s): Camera glides alongside as @whale passes a colourful coral reef, @snail looks around in wonder. SFX: soft bubbles, ocean ambience. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: storm
+      dataPrompt: |
+        Shot 3 (5s): Clouds gather, the sea turns choppy, @whale keeps swimming steadily while @snail holds on tight. SFX: distant thunder, rising wind. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: calm
+      dataPrompt: |
+        Shot 4 (5s): The storm clears, a rainbow arcs over the water, @whale surfaces and exhales a spout. SFX: rain easing, relieved whale call. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: island
+      dataPrompt: |
+        Shot 5 (5s): A palm-covered island appears, @whale slows near the shore, @snail waves. SFX: gentle surf, tropical birds. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: night
+      dataPrompt: |
+        Shot 6 (5s): Night falls, stars appear, @whale and @snail rest in moonlit water. SFX: quiet waves, distant crickets. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 30
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false

@@ -1,0 +1,22 @@
+type: scene
+metadata:
+  name: keyframe-transition
+spec:
+  dataPrompt: |
+    The video begins on the first reference frame and ends on the last: @hero walks along the park path as the morning mist lifts, then sits on the bench with @sidekick
+  dataPromptNegative: dark, scary, blurry, jump cuts, scene changes
+  shots:
+    - name: walk-and-sit
+      dataPrompt: |
+        Shot 1 (8s): @hero walks down the path, the mist clears and the light brightens, she sits on the bench and @sidekick hops onto her lap. SFX: footsteps, birds waking up. No background music.
+      dataPromptNegative: ''
+      duration: 8
+  keyframes:
+    first: keyframe-start
+    last: keyframe-end
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false
