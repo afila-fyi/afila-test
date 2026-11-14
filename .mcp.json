@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "afila": {
+            "command": "node",
+            "args": ["../afila/mcp/dist/mcp/src/index.js"],
+            "env": {
+                "AFILA_API_URL": "http://localhost:4000"
+            }
+        }
+    }
+}

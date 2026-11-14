@@ -1,0 +1,12 @@
+{
+    "servers": {
+        "afila": {
+            "type": "stdio",
+            "command": "node",
+            "args": ["${workspaceFolder}/../afila/mcp/dist/mcp/src/index.js"],
+            "env": {
+                "AFILA_API_URL": "http://localhost:4000"
+            }
+        }
+    }
+}

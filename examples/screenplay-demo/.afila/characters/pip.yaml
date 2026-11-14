@@ -1,0 +1,8 @@
+type: character
+metadata:
+  name: pip
+spec:
+  dataPrompt: A small cheeky white seagull with grey wings, bright orange beak and curious round eyes, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, scary
+status:
+  success: false

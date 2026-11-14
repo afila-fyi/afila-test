@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s03-rescue
+spec:
+  dataPrompt: |
+    The lighthouse beam finds the red rowboat at night, @pip circles overhead and @maya smiles from the balcony, the waves calming, ligne claire cartoon style
+  dataPromptNegative: scary, gore, blurry, low quality, text overlays, watermark
+  shots:
+    - name: beam
+      dataPrompt: |
+        Shot 1 (5s): Wide night shot, the lighthouse beam lands on the red rowboat where a small child waves, @pip circles overhead guiding the way. SFX: waves easing, flapping wings. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: smile
+      dataPrompt: |
+        Shot 2 (5s): Medium shot, @maya on the balcony smiles in the lamp light and says "Told you. Never trust a quiet morning." SFX: calming sea. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  keyframes:
+    first: stormy-sea
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false

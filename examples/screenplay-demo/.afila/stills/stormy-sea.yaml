@@ -1,0 +1,12 @@
+type: still
+metadata:
+  name: stormy-sea
+spec:
+  dataPrompt: |
+    A choppy dark sea under rolling storm clouds, a tiny red rowboat with a small child tossed by the waves in the distance, a lighthouse beam cutting across the water, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, gore
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

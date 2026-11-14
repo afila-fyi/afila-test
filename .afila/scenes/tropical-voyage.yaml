@@ -25,6 +25,5 @@ spec:
     duration: 15
     aspectRatio: '16:9'
     resolution: 1080p
-    enableAudio: true
 status:
   success: false

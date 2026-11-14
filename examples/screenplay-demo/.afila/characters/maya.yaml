@@ -1,0 +1,8 @@
+type: character
+metadata:
+  name: maya
+spec:
+  dataPrompt: A 30-year-old lighthouse keeper woman with a long grey braid, bright yellow raincoat, weathered kind face, gentle smile, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, scary
+status:
+  success: false

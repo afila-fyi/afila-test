@@ -20,7 +20,6 @@ spec:
     duration: 10
     aspectRatio: '16:9'
     resolution: 1080p
-    enableAudio: true
 status:
   success: true
   reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6a258f8c4f8add99be5c2674/scenes/park-meeting.mp4

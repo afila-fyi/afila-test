@@ -1,0 +1,24 @@
+type: scene
+metadata:
+  name: s02-storm
+spec:
+  dataPrompt: |
+    A storm rolls in over the sea while @maya cranks the great lamp of the lighthouse and @pip flies toward the boat in @stormy-sea, ligne claire cartoon style
+  dataPromptNegative: scary, gore, blurry, low quality, text overlays, watermark
+  shots:
+    - name: storm
+      dataPrompt: |
+        Shot 1 (5s): Wide shot, clouds race in and the sea turns dark and choppy, a tiny red rowboat bobs far below as in @stormy-sea, @maya says worried "Pip... that's a boat." SFX: rising wind, waves. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: lamp
+      dataPrompt: |
+        Shot 2 (5s): Interior of the lamp room, @maya cranks the great lamp and its beam sweeps outward, @pip flaps out of the window toward the boat. SFX: creaking crank, humming lamp, flapping wings. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false

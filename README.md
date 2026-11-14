@@ -1,6 +1,8 @@
 # afila-test
 
-Sample Afila project. Every file in `.afila/` is a YAML asset. Scenes are generated with Google Gemini Omni (`gemini-omni-1.2-flash`).
+Sample Afila project. Every file in `.afila/` is a YAML asset. Pipeline order: characters → stills → scenes. `status.reference` holds the generated asset's URL; `success: false` means not generated yet.
+
+For an end-to-end example that turns a screenplay into these files, see [`examples/screenplay-demo`](examples/screenplay-demo/README.md).
 
 Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 720p = 5, 1080p = 8, 4k = 15. Each scene adds 0.5.
 
@@ -32,3 +34,9 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 
 - No custom voices or `.afila/voices`: describe the voice in the prompt.
 - Keyframes support `first` and `last` only (no `middle`).
 - Use `dataPromptNegative` for things to avoid.
+
+## Agent workflow (screenplay → assets)
+
+- Skills in `.github/skills/`: `screenplay-to-afila` (break a screenplay/story into characters, stills and scenes) and `afila-generate` (login, validate, push, submit, poll).
+- MCP server `afila` (source in the `afila` repo, `mcp/`), registered in `.vscode/mcp.json` and `.mcp.json`. Tools: `afila_request_login_code`, `afila_login`, `afila_get_balance`, `afila_validate_project`, `afila_submit_job`, `afila_get_job`, `afila_list_jobs`, `afila_wait_for_job`.
+- Worked example: [`examples/screenplay-demo`](examples/screenplay-demo/README.md).

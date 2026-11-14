@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s01-dawn
+spec:
+  dataPrompt: |
+    @maya and @pip on the lighthouse balcony at dawn, calm sea, pink and gold light, ligne claire cartoon style
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark
+  shots:
+    - name: establishing
+      dataPrompt: |
+        Shot 1 (5s): Wide shot, the sun rises over a calm sea behind the white lighthouse, @maya steps onto the balcony with a steaming mug and @pip lands on the railing. SFX: gentle waves, gulls. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: line
+      dataPrompt: |
+        Shot 2 (5s): Close-up, @maya sips her tea and says warmly "Another day, another storm that never came." @pip tilts its head and squawks. SFX: soft wind, squawk. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  keyframes:
+    first: lighthouse-dawn
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 720p
+status:
+  success: false
