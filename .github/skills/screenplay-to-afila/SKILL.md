@@ -5,7 +5,7 @@ description: Break a screenplay, script or story into Afila primitives (characte
 
 # Screenplay → Afila primitives
 
-Turn long-form writing into the YAML files the Afila editor generates assets from. Output goes in `.afila/` of the user's repo. Always finish by calling the `afila_validate_project` MCP tool and fixing every error.
+Turn long-form writing into the YAML files the Afila editor generates assets from. Output goes in `.afila/` of the user's repo. Call `afila_get_authoring_guide` for the full rules, and always finish by calling the `afila_validate_project` MCP tool (pass the files' contents) and fixing every error.
 
 ## Primitives
 

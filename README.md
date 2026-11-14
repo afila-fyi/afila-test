@@ -37,6 +37,6 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 
 
 ## Agent workflow (screenplay → assets)
 
-- Skills in `.github/skills/`: `screenplay-to-afila` (break a screenplay/story into characters, stills and scenes) and `afila-generate` (login, validate, push, submit, poll).
-- MCP server `afila` (source in the `afila` repo, `mcp/`), registered in `.vscode/mcp.json` and `.mcp.json`. Tools: `afila_request_login_code`, `afila_login`, `afila_get_balance`, `afila_validate_project`, `afila_submit_job`, `afila_get_job`, `afila_list_jobs`, `afila_wait_for_job`.
+- Skills in `.github/skills/`: `screenplay-to-afila` (break a screenplay/story into characters, stills and scenes) and `afila-generate` (validate, push, submit, poll).
+- Hosted remote MCP server `afila` (`https://api.afila.fyi/mcp`, OAuth browser sign-in, nothing to run locally), registered in `.vscode/mcp.json` and `.mcp.json`. Tools: `afila_get_authoring_guide`, `afila_get_balance`, `afila_validate_project`, `afila_submit_job`, `afila_get_job`, `afila_list_jobs`, `afila_wait_for_job`.
 - Worked example: [`examples/screenplay-demo`](examples/screenplay-demo/README.md).
