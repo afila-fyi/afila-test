@@ -23,4 +23,6 @@ spec:
     aspectRatio: '16:9'
     resolution: 360p
 status:
-  success: false
+  success: true
+  reference: https://afilastore.blob.core.windows.net/assets/afila-fyi/afila-test/6afa43f24fdb7e94146f0c5f/scenes/s001-lamp-room.mp4
+  generatedTime: '2026-11-15T23:48:57.149Z'
