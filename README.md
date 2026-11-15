@@ -31,6 +31,7 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 
 - Aspect ratios: 16:9 and 9:16 only. Resolutions: 360p, 720p, 1080p, 4k.
 - Scene length 3–30s. Over 15s uses extension turns. With first and last keyframes the max is 10s.
 - At most 6 reference images per scene (characters, stills and keyframes).
+- `spec.continuesFrom: <scene>` opens a scene with the last frame of an earlier rendered scene (counts toward the 6 images; cannot be combined with `keyframes.first`; the target must be generated first).
 - No custom voices or `.afila/voices`: describe the voice in the prompt.
 - Keyframes support `first` and `last` only (no `middle`).
 - Use `dataPromptNegative` for things to avoid.
@@ -40,3 +41,4 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 
 - Skills in `.github/skills/`: `screenplay-to-afila` (break a screenplay/story into characters, stills and scenes) and `afila-generate` (validate, push, submit, poll).
 - Hosted remote MCP server `afila` (`https://api.afila.fyi/mcp`, OAuth browser sign-in, nothing to run locally), registered in `.vscode/mcp.json` and `.mcp.json`. Tools: `afila_get_authoring_guide`, `afila_get_balance`, `afila_validate_project`, `afila_submit_job`, `afila_get_job`, `afila_list_jobs`, `afila_wait_for_job`.
 - Worked example: [`examples/screenplay-demo`](examples/screenplay-demo/README.md).
+- Long scripts and scene-to-scene continuity (`spec.continuesFrom`, keyframe chaining, ledger, batch queue): [`examples/feature-length-outline`](examples/feature-length-outline/README.md).

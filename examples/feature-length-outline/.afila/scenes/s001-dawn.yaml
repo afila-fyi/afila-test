@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s001-dawn
+spec:
+  dataPrompt: |
+    Wide shot of @lighthouse-dawn as the sun rises. @maya steps onto the balcony in her yellow raincoat. SFX: waves, gulls. No background music.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark
+  shots:
+    - name: a
+      dataPrompt: |
+        Shot 1 (5s): Medium shot, @maya in her yellow raincoat sips tea and says "Another quiet day." SFX: wind. No background music.
+      dataPromptNegative: ""
+      duration: 5
+    - name: b
+      dataPrompt: |
+        Shot 2 (5s): 
+      dataPromptNegative: ""
+      duration: 5
+  keyframes:
+    first: lighthouse-dawn
+  options:
+    duration: 10
+    aspectRatio: "16:9"
+    resolution: 360p
+status:
+  success: false

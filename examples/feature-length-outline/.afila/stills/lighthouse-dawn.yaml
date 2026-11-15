@@ -1,0 +1,11 @@
+type: still
+metadata:
+  name: lighthouse-dawn
+spec:
+  dataPrompt: A white lighthouse on a cliff at dawn, calm sea, empty balcony, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, realistic, dark
+  options:
+    outputFormat: png
+    aspectRatio: "16:9"
+status:
+  success: false

@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s004-signal
+spec:
+  dataPrompt: |
+    Same lamp room and lighting, @maya-night in her blue sweater grabs the lamp lever. SFX: rain, creak. No background music.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark
+  continuesFrom: s003-lamp-room
+  shots:
+    - name: a
+      dataPrompt: |
+        Shot 1 (5s): Close-up of the lamp, @maya-night in her blue sweater pulls the lever and the beam sweeps out. SFX: heavy hum. No background music.
+      dataPromptNegative: ""
+      duration: 5
+    - name: b
+      dataPrompt: |
+        Shot 2 (5s): 
+      dataPromptNegative: ""
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: "16:9"
+    resolution: 360p
+status:
+  success: false

@@ -22,9 +22,23 @@ Requires the hosted `afila` MCP server (`https://api.afila.fyi/mcp`, configured 
    The editor pushes results back to the repo — fetch the new branch named in the job, then each YAML's `status.reference` is the asset URL (`status.success: true`). Summarize character/still/scene URLs for the user.
 8. **Iterate**: to regenerate one asset, edit its prompt and set `status.success: false` (remove `reference`), commit/push, submit again — only non-successful assets are charged.
 
+## Large projects: batch loop with a queue dir
+
+A job generates every non-successful asset in `.afila/`, so stage work in batches. Future scenes live in `.afila-queue/<batch>/` (outside `.afila/`, so the editor ignores them).
+
+0. **Batch 0**: characters + location stills (the whole bible). Generate and merge.
+1. For each batch (a sequence of scenes), in order:
+   1. `git mv .afila-queue/<batch>/*.yaml .afila/scenes/`.
+   2. **Dependency check**: every scene's `continuesFrom` target and every `@ref`/keyframe must already be `status.success: true` (merged) or be in this same batch. Otherwise stop and reorder.
+   3. Validate (all of `.afila/`), `afila_get_balance` vs estimate, and **confirm the cost with the user**.
+   4. Commit, push, `afila_submit_job`, `afila_wait_for_job` until done.
+   5. **Merge results**: the editor pushes statuses to a *new* branch. `git fetch`, merge it into the working branch (conflicts are only in `status:` blocks — take the editor's side), push.
+   6. **Review**: list each scene's `status.reference` URL; ask the user to check continuity (outfits, location, positions) before the next batch. Fix a bad scene by editing its prompt, setting `status.success: false`, and re-running; dependents of a regenerated scene must also be reset to `success: false`.
+2. A failed scene skips its `continuesFrom` dependents ("has no generated video") — fix and re-run the batch.
+
 ## Pipeline facts
 
-- Order: characters → stills → scenes; scenes depend on generated references, so a missing character/still image fails the scene.
+- Order: characters → stills → scenes (scenes in filename order, `continuesFrom` targets first); scenes depend on generated references, so a missing character/still image fails the scene.
 - Jobs expire from history after 7 days.
 - Credits: character 1, still 2, scene `ceil(sec × rate/5 + 0.5)` (rate/5s: 360p 2, 720p 5, 1080p 8, 4k 15).
 - Never reveal or name the underlying generation models in user-facing output.

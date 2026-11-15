@@ -24,6 +24,8 @@ Generation order is characters → stills → scenes. Scenes cite characters/sti
 - Per scene: ≤6 distinct reference images (every `@name` in prompts + keyframes).
 - `options.aspectRatio`: `16:9` or `9:16`. `options.resolution`: `360p|720p|1080p|4k`.
 - `keyframes`: only `first` and/or `last` (names of characters/stills). With `last`, scene must be ≤10 s. No `middle`.
+- `spec.continuesFrom: <scene-name>`: seeds the scene's opening frame from the **last frame of the rendered previous scene** (continuous action, same location). The target must be another scene, no cycles, and it cannot be combined with `keyframes.first`. It uses one of the 6 image slots. The target must be generated first; if it fails, the dependent scene is skipped.
+- Scene order = alphabetical by filename (a `continuesFrom` target is always processed first). Use zero-padded names: `s001-…`, `s002-…`.
 - Do NOT create `.afila/voices/` or `spec.voices` and do not use `enableAudio` (all removed; audio is always generated).
 - Never write `status` blocks with `success: true`/`reference` yourself. New assets use `status:\n  success: false`.
 - Do not name underlying AI models in user-facing text.
@@ -34,7 +36,7 @@ Generation order is characters → stills → scenes. Scenes cite characters/sti
 2. **Pick a visual style line** (e.g. "ligne claire cartoon style, clean bold outlines, flat cel-shaded colors") and append it to *every* character and still prompt and to scene `dataPrompt`s. Consistency of style is what makes clips cut together.
 3. **Characters**: one file per recurring character, ≤6 per scene. Describe age, hair, clothing (fixed outfit), expression, style. Put "blurry, low quality, deformed" (+ style opposites) in `dataPromptNegative`. Minor extras don't need files; describe them inline in prompts.
 4. **Stills**: one per key location (`@Characters` can be mentioned inside still prompts to bake them in), plus one per keyframe needed for continuity. Set `options.outputFormat` (`png`) and `aspectRatio`.
-5. **Scenes**: split the screenplay on sluglines/beat changes into clips of ~5–15 s. Each scene = 1–6 shots of 3–10 s. Longer sequences become several scenes named in order (`s01-arrival`, `s02-chase`) — chain continuity with `keyframes.last` of scene N matching `keyframes.first` of scene N+1 (a still, ≤10 s scenes).
+5. **Scenes**: split the screenplay on sluglines/beat changes into clips of ~5–15 s. Each scene = 1–6 shots of 3–10 s. Longer sequences become several scenes named in order (`s001-arrival`, `s002-chase`) — see **Continuity** and **Large screenplays** below.
 6. **Shot prompt format** (matches the samples):
    `Shot N (Ds): <camera>, <action with @refs>. @hero says "<dialogue>". SFX: <sounds>. No background music.`
    - Dialogue in double quotes with voice direction ("bright young voice").
@@ -74,10 +76,10 @@ status:
 ```
 
 ```yaml
-# .afila/scenes/s01-dawn.yaml
+# .afila/scenes/s001-dawn.yaml
 type: scene
 metadata:
-  name: s01-dawn
+  name: s001-dawn
 spec:
   dataPrompt: |
     @maya at the lighthouse balcony at dawn, <STYLE>
@@ -103,4 +105,31 @@ status:
   success: false
 ```
 
-See `examples/screenplay-demo/` for a full worked example. Next step after validation: use the `afila-generate` skill.
+## Continuity (critical for long sequences)
+
+Every scene is rendered independently, so continuity must be designed. Per boundary between scene N and N+1 choose:
+
+| Situation | Use | Notes |
+|---|---|---|
+| Same location/time, action carries on | `continuesFrom: <N>` on scene N+1 | Real rendered end-state is the opening frame; scene can be up to 15 s; dialogue fine. Still image only — re-describe motion, lighting and positions in the first shot. |
+| Hard cut, new location, or time jump | New location still as `keyframes.first`; optionally `keyframes.last` on N matching a shared still | Keyframe scenes must be ≤10 s; the still must be generated before the scene. |
+| Same character, new angle in the same room | Nothing special; mention the same `@refs` and location still | Cheapest. |
+
+Rules that keep long sequences coherent:
+- **One STYLE line** in every prompt; never vary it.
+- **Re-anchor each shot**: only the last ~10 s of context influence a scene, so name the character (`@maya`), her outfit and the location in every shot, not just the first.
+- **Wardrobe/time variants are separate characters/stills**: `maya`, `maya-storm`, `lighthouse-dawn`, `lighthouse-night`. Pick the variant by the ledger, never mid-scene.
+- **Screen direction & positions**: keep a ledger (below) of who is left/right and what they hold, and state it in the first shot of the next scene.
+- **6-image budget**: character + still + continuation seed all count. Prefer ≤2 characters + 1 location still + the seed; fold props into the prompt text.
+- Don't chain `continuesFrom` through more than ~5 scenes without a still anchor; drift accumulates. Insert a location still as `keyframes.first` at the next hard cut to reset it.
+
+## Large screenplays
+
+1. **Story bible first** (`BIBLE.md`): STYLE line, a card per character (look, fixed outfit, variants), a location list with time-of-day variants, recurring props. Create all characters and location stills from this before any scene.
+2. **Continuity ledger** in `STORYBOARD.md`, one row per scene: `scene | slugline | characters (variant) | location still | time | entry state | exit state | screen direction | link (continuesFrom X / keyframe Y / hard cut)`. Fill it before writing scene YAML, and re-read the previous row when writing the next scene.
+3. **Group scenes into sequences** (~5–15 scenes, each sequence one location/act). Stay far below the validate limits (200 files, 200 KB per file).
+4. **Queue, don't dump**: one job generates *everything* not yet successful. Put the future sequences' scene YAMLs in `.afila-queue/seq02/`, `.afila-queue/seq03/` (outside `.afila/`) and move a batch into `.afila/` only when ready. Characters and location stills for the whole script can go in batch 0. The `afila-generate` skill runs this loop, including merging each result branch back before the next batch.
+5. **Dependencies before dependents**: a `continuesFrom` target must be `success: true` (generated and merged) before its dependent scene enters `.afila/`; or put both in the same batch (processed in order).
+6. Run `afila_validate_project` per batch with all files currently in `.afila/`, and spot-check images from the previous batch before continuing.
+
+See `examples/feature-length-outline/` for a three-sequence example with a ledger and queue, and `examples/screenplay-demo/` for a full worked example. Next step after validation: use the `afila-generate` skill.

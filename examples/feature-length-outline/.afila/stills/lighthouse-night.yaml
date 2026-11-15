@@ -1,0 +1,11 @@
+type: still
+metadata:
+  name: lighthouse-night
+spec:
+  dataPrompt: Interior of a lighthouse lamp room at night, glowing lamp, rain on the windows, wooden desk with a radio, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, realistic, dark
+  options:
+    outputFormat: png
+    aspectRatio: "16:9"
+status:
+  success: false
