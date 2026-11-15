@@ -1,0 +1,8 @@
+type: character
+metadata:
+  name: tomas
+spec:
+  dataPrompt: A 50-year-old fisherman, broad shoulders, short white beard, green oilskin jacket and black sailor cap, deep-set blue eyes, weathered face, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, deformed, realistic, scary
+status:
+  success: false

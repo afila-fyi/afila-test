@@ -1,0 +1,11 @@
+type: still
+metadata:
+  name: lighthouse-dawn
+spec:
+  dataPrompt: Exterior balcony of a white lighthouse at dawn, iron railing, view over a calm pink and gold sea and a small dock far below, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, realistic, people, dark
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

@@ -1,0 +1,11 @@
+type: still
+metadata:
+  name: lamp-room
+spec:
+  dataPrompt: Interior of a lighthouse lamp room at night, large glowing lamp lens in the center, wooden desk with a marine radio on the left, storm rain streaming down curved windows, warm amber light, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, realistic, people
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

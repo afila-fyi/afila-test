@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s012-thanks
+spec:
+  dataPrompt: |
+    Same dock, same dawn light, @maya in her bright yellow raincoat and @tomas in his green oilskin jacket stand together. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s011-meeting
+  shots:
+    - name: reply
+      dataPrompt: |
+        Shot 1 (5s): Continuing directly from the previous shot, close-up of @maya in her bright yellow raincoat saying in a warm low alto female voice with a slight Scottish lilt, calm and measured, "That's what the light is for. Come up, the kettle's on." SFX: gentle waves, gulls. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: laugh
+      dataPrompt: |
+        Shot 2 (4s): Close-up of @tomas in his green oilskin jacket, a tired grin spreading across his white beard, as he says in a gruff deep male baritone voice, hoarse, with an Irish accent, "Lead the way, keeper." SFX: gentle waves, gulls. No background music.
+      dataPromptNegative: ''
+      duration: 4
+  options:
+    duration: 9
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

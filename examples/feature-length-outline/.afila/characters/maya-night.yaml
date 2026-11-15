@@ -1,8 +1,0 @@
-type: character
-metadata:
-  name: maya-night
-spec:
-  dataPrompt: A 30-year-old lighthouse keeper woman with a long grey braid, dark blue wool sweater, kind weathered face, tired eyes, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
-  dataPromptNegative: blurry, low quality, deformed, realistic
-status:
-  success: false

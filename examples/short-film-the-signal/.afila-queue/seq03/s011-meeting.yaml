@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s011-meeting
+spec:
+  dataPrompt: |
+    Calm dawn at the stone dock, pink and gold light, @maya in her bright yellow raincoat and @tomas in his green oilskin jacket meet by the boat. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  shots:
+    - name: arrives
+      dataPrompt: |
+        Shot 1 (4s): Wide shot of @dock-dawn, @maya in her bright yellow raincoat walks down the stone steps toward @tomas in his green oilskin jacket and black sailor cap, who turns to face her. SFX: gentle waves, gulls, footsteps on stone. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: handshake
+      dataPrompt: |
+        Shot 2 (6s): Two-shot, @tomas takes off his black sailor cap and says in a gruff deep male baritone voice, hoarse, with an Irish accent, "That light of yours. I thought I'd never see land again." @maya in her bright yellow raincoat smiles. SFX: gentle waves, gulls. No background music.
+      dataPromptNegative: ''
+      duration: 6
+  keyframes:
+    first: dock-dawn
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

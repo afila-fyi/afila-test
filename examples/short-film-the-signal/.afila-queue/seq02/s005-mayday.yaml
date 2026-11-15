@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s005-mayday
+spec:
+  dataPrompt: |
+    Same stormy night, same wheelhouse, cold blue-grey light, @tomas in his green oilskin jacket and black sailor cap. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, handheld energy.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s004-boat-deck
+  shots:
+    - name: engine-dies
+      dataPrompt: |
+        Shot 1 (4s): Continuing directly from the previous shot, @tomas in his green oilskin jacket and black sailor cap, the engine dies with a cough and he slams the wheel. SFX: roaring waves, howling wind, creaking hull, engine dying. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: radio
+      dataPrompt: |
+        Shot 2 (5s): Close-up of @tomas in his green oilskin jacket and black sailor cap grabbing the radio and shouting in a gruff deep male baritone voice, hoarse, with an Irish accent, "Mayday, mayday! This is the Marigold, we've lost the engine!" SFX: roaring waves, howling wind, radio click. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 9
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

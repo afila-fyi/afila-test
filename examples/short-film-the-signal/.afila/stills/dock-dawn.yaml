@@ -1,0 +1,11 @@
+type: still
+metadata:
+  name: dock-dawn
+spec:
+  dataPrompt: A small stone dock at dawn below a white lighthouse on a cliff, a wooden fishing boat moored, calm pink and gold sea, mist, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, realistic, people, dark
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

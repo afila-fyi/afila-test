@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s001-lamp-room
+spec:
+  dataPrompt: |
+    Night storm in the lighthouse lamp room, warm amber light, @maya-night at the desk by the radio. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  shots:
+    - name: establishing
+      dataPrompt: |
+        Shot 1 (4s): Wide establishing shot of @lamp-room, rain streaming down the curved windows, the lamp lens glowing, slow push-in toward the desk. SFX: steady rain on glass, low hum of the lamp. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: maya-desk
+      dataPrompt: |
+        Shot 2 (4s): Medium shot, @maya-night in her dark blue wool sweater sits at the desk beside the radio, writing in a logbook, looks up at the radio. SFX: steady rain on glass, low hum of the lamp, pen scratching. No background music.
+      dataPromptNegative: ''
+      duration: 4
+  keyframes:
+    first: lamp-room
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false
