@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s006-beam
+spec:
+  dataPrompt: |
+    Same stormy night, cold blue-grey light, @tomas in his green oilskin jacket and black sailor cap on the boat. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, handheld energy.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s005-mayday
+  shots:
+    - name: waiting
+      dataPrompt: |
+        Shot 1 (3s): Continuing directly from the previous shot, @tomas in his green oilskin jacket and black sailor cap lowers the radio, scanning the dark horizon. SFX: roaring waves, howling wind, creaking hull. No background music.
+      dataPromptNegative: ''
+      duration: 3
+    - name: light
+      dataPrompt: |
+        Shot 2 (5s): Over-the-shoulder shot from behind @tomas in his green oilskin jacket and black sailor cap, a distant lighthouse beam cuts through the rain and sweeps across the waves, lighting his face as he exhales in relief. SFX: roaring waves, howling wind, distant heavy hum. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

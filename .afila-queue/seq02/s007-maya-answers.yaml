@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s007-maya-answers
+spec:
+  dataPrompt: |
+    Night storm in the lighthouse lamp room, warm amber light, the lamp beam turning, @maya-night at the desk by the radio. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  shots:
+    - name: wide
+      dataPrompt: |
+        Shot 1 (4s): Hard cut to a wide shot of @lamp-room, the lamp lens now blazing and turning, rain streaming down the windows, @maya-night in her dark blue wool sweater at the desk by the radio. SFX: steady rain on glass, heavy mechanical hum. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: guide
+      dataPrompt: |
+        Shot 2 (5s): Close-up of @maya-night in her dark blue wool sweater speaking into the radio in a warm low alto female voice with a slight Scottish lilt, calm and measured, "I see you, Marigold. Steer for the light. Keep it just off your starboard bow." SFX: steady rain on glass, heavy mechanical hum, radio click. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  keyframes:
+    first: lamp-room
+  options:
+    duration: 9
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

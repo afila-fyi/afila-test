@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s003-lever
+spec:
+  dataPrompt: |
+    Same lamp room, same night, same amber light, @maya-night in her dark blue wool sweater. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s002-radio
+  shots:
+    - name: reply
+      dataPrompt: |
+        Shot 1 (4s): Continuing directly from the previous shot, close-up of @maya-night in her dark blue wool sweater pressing the radio button and saying in a warm low alto female voice with a slight Scottish lilt, calm and measured, "Marigold, this is Saint Brigid light. Hold on. I'm lighting the lamp." SFX: steady rain on glass, radio click. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: lever
+      dataPrompt: |
+        Shot 2 (5s): Medium shot, @maya-night in her dark blue wool sweater stands and throws the big brass lamp lever with both hands; the lamp lens ignites and a strong beam begins to turn. SFX: heavy mechanical hum, rain on glass. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 9
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

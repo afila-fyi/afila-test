@@ -1,0 +1,11 @@
+type: still
+metadata:
+  name: boat-deck
+spec:
+  dataPrompt: Deck and small wheelhouse of a wooden fishing boat in a night storm, huge dark waves, rain, a hand-held radio on the wheelhouse shelf, cold blue-grey light, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, realistic, people
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

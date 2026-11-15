@@ -1,0 +1,26 @@
+type: scene
+metadata:
+  name: s004-boat-deck
+spec:
+  dataPrompt: |
+    Night storm at sea, cold blue-grey light, @tomas at the wheel of his fishing boat. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, handheld energy.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  shots:
+    - name: wave
+      dataPrompt: |
+        Shot 1 (4s): Wide shot of @boat-deck, a huge wave breaks over the bow and the boat pitches. SFX: roaring waves, howling wind, creaking hull. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: tomas-wheel
+      dataPrompt: |
+        Shot 2 (4s): Medium shot, @tomas in his green oilskin jacket and black sailor cap fights the wheel in the wheelhouse, rain streaming off his white beard, the engine sputtering. SFX: roaring waves, howling wind, creaking hull, coughing engine. No background music.
+      dataPromptNegative: ''
+      duration: 4
+  keyframes:
+    first: boat-deck
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

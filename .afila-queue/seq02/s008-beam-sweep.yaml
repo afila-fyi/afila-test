@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s008-beam-sweep
+spec:
+  dataPrompt: |
+    Same lamp room, same night, same amber light, the lamp beam turning, @maya-night in her dark blue wool sweater. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s007-maya-answers
+  shots:
+    - name: waits
+      dataPrompt: |
+        Shot 1 (4s): Continuing directly from the previous shot, @maya-night in her dark blue wool sweater lowers the radio and walks to the rain-streaked window, watching the beam sweep across the sea. SFX: steady rain on glass, heavy mechanical hum. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: faint-boat
+      dataPrompt: |
+        Shot 2 (4s): Close-up of @maya-night in her dark blue wool sweater at the window, the beam light moving across her face, a small smile of relief as she whispers in a warm low alto female voice with a slight Scottish lilt, calm and measured, "There you are." SFX: steady rain on glass, heavy mechanical hum. No background music.
+      dataPromptNegative: ''
+      duration: 4
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

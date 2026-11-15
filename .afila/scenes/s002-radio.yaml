@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s002-radio
+spec:
+  dataPrompt: |
+    Same lamp room, same night, same amber light, @maya-night at the desk by the radio. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s001-lamp-room
+  shots:
+    - name: static
+      dataPrompt: |
+        Shot 1 (4s): Continuing directly from the previous shot in the same lamp room, @maya-night in her dark blue wool sweater freezes at the desk as the radio crackles. SFX: steady rain on glass, low hum of the lamp, radio static. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: mayday
+      dataPrompt: |
+        Shot 2 (5s): Close-up of @maya-night in her dark blue wool sweater leaning toward the radio, hand on the dial. A man's voice, a gruff deep male baritone voice, hoarse, with an Irish accent, through crackling radio static, says "Mayday... anyone... this is the Marigold... we are losing the engine." SFX: steady rain on glass, radio static. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 9
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false

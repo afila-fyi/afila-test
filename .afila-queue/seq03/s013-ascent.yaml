@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s013-ascent
+spec:
+  dataPrompt: |
+    Same dock and stone steps at dawn, pink and gold light, @maya in her bright yellow raincoat and @tomas in his green oilskin jacket walking up toward the lighthouse. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors. Cinematic, slow camera.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s012-thanks
+  shots:
+    - name: walk
+      dataPrompt: |
+        Shot 1 (5s): Continuing directly from the previous shot, tracking shot from behind as @maya in her bright yellow raincoat and @tomas in his green oilskin jacket and black sailor cap walk side by side up the stone steps. SFX: gentle waves, footsteps on stone, gulls. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: lighthouse
+      dataPrompt: |
+        Shot 2 (5s): Slow crane-up over the two figures to a wide shot of the white lighthouse glowing in the sunrise, the lamp finally dark. SFX: gentle waves, gulls, a distant bell. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 360p
+status:
+  success: false
