@@ -1,0 +1,8 @@
+type: voice
+metadata:
+  name: Storyteller-voice
+spec:
+  description: A gravelly, warm elderly man's voice with a slow, rolling Scottish accent
+  sampleLine: Aye, gather round and I'll tell ye a tale.
+status:
+  success: false

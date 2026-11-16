@@ -1,0 +1,9 @@
+type: character
+metadata:
+  name: Storyteller
+spec:
+  dataPrompt: An elderly sea captain with a white beard, navy peacoat and cap, kind weathered face, plain neutral studio background, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors
+  dataPromptNegative: blurry, low quality, deformed, text, logos
+  voice: Storyteller-voice
+status:
+  success: false

@@ -17,6 +17,7 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 480p = 3, 
 | `dialogue-and-audio` | Spoken lines and voice direction in the prompt, SFX, no music | 16:9, 720p, 10s | 13 |
 | `ambience-only` | Layered SFX and ambience, no speech, ultra-wide | 21:9, 720p, 6s | 8 |
 | `two-speaker-dialogue` | Two speakers, voice descriptor repeated before every line | 16:9, 480p, 10s | 7 |
+| `voiced-storyteller` | Optional reusable voice (`Storyteller-voice`) attached via the character | 16:9, 480p, 6s | 5 |
 | `voiceover-narration` | Off-screen narrator over action, vertical storybook | 3:4, 720p, 8s | 11 |
 | `foley-timed-sfx` | Three 2s shots, each with a timed sound cue, no speech | 1:1, 480p, 6s | 5 |
 | `multilingual-line` | Lines spoken in different languages by one voice | 4:3, 480p, 6s | 5 |
@@ -37,7 +38,7 @@ Audio is always generated with the video; there is nothing to switch on. Direct 
 - **Ambience and SFX**: write `SFX:` followed by layered, specific sounds; time them per shot (`ambience-only`, `foley-timed-sfx`).
 - **Languages**: write each line in its own language and name it (`multilingual-line`).
 - **No music**: end each shot with `No background music.` and add `background music, soundtrack` to `dataPromptNegative`.
-- Custom voices and reference audio are not supported yet.
+- Optional reusable voices: see "Voices (optional)" below.
 
 ## Limits worth knowing
 
@@ -45,9 +46,13 @@ Audio is always generated with the video; there is nothing to switch on. Direct 
 - Scene length 2–30s, generated in one pass. A last keyframe switches to strict first/last-frame mode, which cannot be combined with `@` references.
 - At most 10 reference images per scene (characters, stills and keyframes).
 - `spec.continuesFrom: <scene>` opens a scene with the last frame of an earlier rendered scene (counts toward the 10 images; cannot be combined with `keyframes.first`; the target must be generated first).
-- No custom voices or `.afila/voices`: describe the voice in the prompt.
+- Voices are optional; without one, describe the voice in the prompt.
 - Keyframes support `first` and `last` only (no `middle`).
 - Use `dataPromptNegative` for things to avoid.
+
+## Voices (optional)
+
+Voices are never required. To keep one character's timbre identical across scenes, add `.afila/voices/<name>.yaml` (`description`, optional `sampleLine` of at most 12 words, or `audioUrl` pointing to a 1-5s .wav/.mp3 you uploaded) and set `spec.voice: <name>` on the character. A voice without a sample is generated once (3 credits) before the scenes; if that fails, scenes fall back to the voice in the prompt. At most 3 voiced characters per scene. Sample: `Storyteller-voice` + `storyteller` + `voiced-storyteller` (6s, 480p: 5 credits).
 
 ## Agent workflow (screenplay → assets)
 

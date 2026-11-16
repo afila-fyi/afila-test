@@ -1,0 +1,19 @@
+type: scene
+metadata:
+  name: voiced-storyteller
+spec:
+  dataPrompt: |
+    @storyteller sits on a harbour bench at sunset and speaks to the camera. His optional reusable voice (Storyteller-voice) is attached automatically, so no voice phrase is needed. Ligne claire cartoon style, flat cel-shaded colors.
+  dataPromptNegative: dark, blurry, low quality, background music, subtitles, captions
+  shots:
+    - name: tale
+      dataPrompt: |
+        Shot 1 (6s): Medium shot. @storyteller says: "The sea keeps every secret, lad, but she lets a few slip at sunset." SFX: gentle waves, distant gulls. No background music.
+      dataPromptNegative: ''
+      duration: 6
+  options:
+    duration: 6
+    aspectRatio: '16:9'
+    resolution: 480p
+status:
+  success: false
