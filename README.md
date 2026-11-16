@@ -4,23 +4,22 @@ Sample Afila project. Every file in `.afila/` is a YAML asset. Pipeline order: c
 
 For an end-to-end example that turns a screenplay into these files, see [`examples/screenplay-demo`](examples/screenplay-demo/README.md).
 
-Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 720p = 5, 1080p = 8, 4k = 15. Each scene adds 0.5.
+Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 480p = 3, 720p = 6, 1080p = 12. Each scene adds 0.5.
 
 ## Scene samples
 
 | Scene | Demonstrates | Options | Credits |
 |---|---|---|---|
-| `greeting` | Minimal single shot | 16:9, 720p, 5s | 6 |
-| `park-meeting` | Two shots, dialogue and SFX | 16:9, 1080p, 10s | 17 |
-| `tropical-voyage` | Three shots, negative prompt | 16:9, 1080p, 15s | 25 |
-| `vertical-story` | Vertical 9:16 for phones | 9:16, 720p, 10s | 11 |
-| `draft-preview` | Cheap 360p preview | 16:9, 360p, 3s | 2 |
-| `cinematic-4k` | 4k output (upscaled) | 16:9, 4k, 5s | 16 |
-| `epic-voyage-30s` | 30s scene, auto-chained as 15s + 10s + 5s extension turns | 16:9, 720p, 30s | 31 |
-| `keyframe-transition` | First and last keyframes (interpolation, max 10s) | 16:9, 720p, 8s | 9 |
-| `from-still` | First keyframe only, animating a still | 16:9, 1080p, 8s | 14 |
-| `ensemble-six` | Six `@` references (limit) | 16:9, 720p, 10s | 11 |
-| `dialogue-and-audio` | Spoken lines and voice direction in the prompt, SFX, no music | 16:9, 720p, 10s | 11 |
+| `greeting` | Minimal single shot | 16:9, 720p, 5s | 7 |
+| `park-meeting` | Two shots, dialogue and SFX | 16:9, 1080p, 10s | 25 |
+| `tropical-voyage` | Three shots, negative prompt | 16:9, 1080p, 15s | 37 |
+| `vertical-story` | Vertical 9:16 for phones | 9:16, 720p, 10s | 13 |
+| `draft-preview` | Cheap 480p preview | 16:9, 480p, 3s | 3 |
+| `epic-voyage-30s` | 30s scene in a single generation | 16:9, 720p, 30s | 37 |
+| `keyframe-transition` | First and last keyframes (interpolation; no @references) | 16:9, 720p, 8s | 11 |
+| `from-still` | First keyframe only, animating a still | 16:9, 1080p, 8s | 20 |
+| `ensemble-six` | Six `@` references | 16:9, 720p, 10s | 13 |
+| `dialogue-and-audio` | Spoken lines and voice direction in the prompt, SFX, no music | 16:9, 720p, 10s | 13 |
 
 ## Stills
 
@@ -28,10 +27,10 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 360p = 2, 
 
 ## Limits worth knowing
 
-- Aspect ratios: 16:9 and 9:16 only. Resolutions: 360p, 720p, 1080p, 4k.
-- Scene length 3–30s. Over 15s uses extension turns. With first and last keyframes the max is 10s.
-- At most 6 reference images per scene (characters, stills and keyframes).
-- `spec.continuesFrom: <scene>` opens a scene with the last frame of an earlier rendered scene (counts toward the 6 images; cannot be combined with `keyframes.first`; the target must be generated first).
+- Aspect ratios: 16:9, 9:16, 4:3, 3:4, 1:1, 21:9. Resolutions: 480p, 720p, 1080p.
+- Scene length 2–30s, generated in one pass. A last keyframe switches to strict first/last-frame mode, which cannot be combined with `@` references.
+- At most 10 reference images per scene (characters, stills and keyframes).
+- `spec.continuesFrom: <scene>` opens a scene with the last frame of an earlier rendered scene (counts toward the 10 images; cannot be combined with `keyframes.first`; the target must be generated first).
 - No custom voices or `.afila/voices`: describe the voice in the prompt.
 - Keyframes support `first` and `last` only (no `middle`).
 - Use `dataPromptNegative` for things to avoid.

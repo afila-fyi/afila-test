@@ -20,6 +20,6 @@ spec:
   options:
     duration: 8
     aspectRatio: '16:9'
-    resolution: 360p
+    resolution: 480p
 status:
   success: false

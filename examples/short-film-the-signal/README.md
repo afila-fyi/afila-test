@@ -18,7 +18,7 @@ A ~2-minute, 13-scene film showing how to keep **continuity, consistent characte
 - **Same voice** → the voice phrases in `BIBLE.md` are pasted verbatim before every line (radio lines add the static phrase).
 - **Flow** → establishing → medium → close-up; each continuing scene starts "Continuing directly from the previous shot…" and re-names outfit and location; ambience phrases repeat across cuts.
 
-## Run it (≈ 3 characters + 4 stills + 13 scenes at 360p)
+## Run it (≈ 3 characters + 4 stills + 13 scenes at 480p)
 
 1. Ask the agent: *"Use the afila plugin to generate this film"* (or run each step yourself).
 2. Batch 0 + sequence 1: validate `.afila/`, push, generate, merge the result branch, review.
