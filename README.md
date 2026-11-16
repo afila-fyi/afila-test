@@ -18,7 +18,7 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 480p = 3, 
 | `epic-voyage-30s` | 30s scene in a single generation | 16:9, 720p, 30s | 37 |
 | `keyframe-transition` | First and last keyframes (interpolation; no @references) | 16:9, 720p, 8s | 11 |
 | `from-still` | First keyframe only, animating a still | 16:9, 1080p, 8s | 20 |
-| `ensemble-six` | Six `@` references | 16:9, 720p, 10s | 13 |
+| `ensemble-six` | Six `@` references (the limit is 10; see `ensemble-ten`) | 16:9, 720p, 10s | 13 |
 | `dialogue-and-audio` | Spoken lines and voice direction in the prompt, SFX, no music | 16:9, 720p, 10s | 13 |
 | `ambience-only` | Layered SFX and ambience, no speech, ultra-wide | 21:9, 720p, 6s | 8 |
 | `two-speaker-dialogue` | Two speakers, voice descriptor repeated before every line | 16:9, 480p, 10s | 7 |
