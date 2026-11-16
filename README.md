@@ -20,10 +20,29 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 480p = 3, 
 | `from-still` | First keyframe only, animating a still | 16:9, 1080p, 8s | 20 |
 | `ensemble-six` | Six `@` references | 16:9, 720p, 10s | 13 |
 | `dialogue-and-audio` | Spoken lines and voice direction in the prompt, SFX, no music | 16:9, 720p, 10s | 13 |
+| `ambience-only` | Layered SFX and ambience, no speech, ultra-wide | 21:9, 720p, 6s | 8 |
+| `two-speaker-dialogue` | Two speakers, voice descriptor repeated before every line | 16:9, 480p, 10s | 7 |
+| `voiceover-narration` | Off-screen narrator over action, vertical storybook | 3:4, 720p, 8s | 11 |
+| `foley-timed-sfx` | Three 2s shots, each with a timed sound cue, no speech | 1:1, 480p, 6s | 5 |
+| `multilingual-line` | Lines spoken in different languages by one voice | 4:3, 480p, 6s | 5 |
+| `continues-from-a` / `continues-from-b` | `continuesFrom`: B opens on A's last frame (generate A first) | 16:9, 480p, 5s each | 4 + 4 |
+| `ensemble-ten` | The 10-image maximum: 5 characters + 5 stills | 16:9, 480p, 8s | 6 |
 
 ## Stills
 
-`park-adventure`, `hero-and-sidekick-park` (16:9 png), `keyframe-start`, `keyframe-end` (keyframe sources, 16:9 png), `portrait-hero` (9:16 webp).
+`park-adventure`, `hero-and-sidekick-park` (16:9 png), `keyframe-start`, `keyframe-end` (keyframe sources, 16:9 png), `portrait-hero` (9:16 webp). `ultrawide-establishing` (21:9 png) and `square-portrait` (1:1 png) show other aspect ratios (stills are always rendered at 2K).
+
+## Audio
+
+Audio is always generated with the video; there is nothing to switch on. Direct it in the prompt:
+
+- **Speech**: put the spoken line in quotes and name the voice, e.g. `@hero, bright young warm girl's voice, says: "..."` (`dialogue-and-audio`, `two-speaker-dialogue`).
+- **Consistent voices**: paste the same voice descriptor verbatim before every line for that character (`two-speaker-dialogue`).
+- **Narration**: say "off-screen narrator" and describe the voice (`voiceover-narration`).
+- **Ambience and SFX**: write `SFX:` followed by layered, specific sounds; time them per shot (`ambience-only`, `foley-timed-sfx`).
+- **Languages**: write each line in its own language and name it (`multilingual-line`).
+- **No music**: end each shot with `No background music.` and add `background music, soundtrack` to `dataPromptNegative`.
+- Custom voices and reference audio are not supported yet.
 
 ## Limits worth knowing
 
@@ -41,3 +60,4 @@ Scene credit cost is `ceil(seconds × rate / 5 + 0.5)`. Rates per 5s: 480p = 3, 
 - Hosted remote MCP server `afila` (`https://api.afila.fyi/mcp`, OAuth browser sign-in, nothing to run locally), registered in `.vscode/mcp.json` and `.mcp.json`. Tools: `afila_get_authoring_guide`, `afila_get_balance`, `afila_validate_project`, `afila_submit_job`, `afila_get_job`, `afila_list_jobs`, `afila_wait_for_job`.
 - Worked example: [`examples/screenplay-demo`](examples/screenplay-demo/README.md).
 - Long scripts and scene-to-scene continuity (`spec.continuesFrom`, keyframe chaining, ledger, batch queue): [`examples/short-film-the-signal`](examples/short-film-the-signal/README.md).
+- A compact one-batch short film with narration, dialogue and SFX in a public-domain folk-tale (Robin Hood): [`examples/short-film-robin-hood`](examples/short-film-robin-hood/README.md).

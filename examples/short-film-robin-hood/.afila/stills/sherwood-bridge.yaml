@@ -1,0 +1,12 @@
+type: still
+metadata:
+  name: sherwood-bridge
+spec:
+  dataPrompt: |
+    Wide view of a narrow mossy log bridge over a rushing stream deep in Sherwood Forest at dawn, golden light through tall oaks, no people, storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style
+  dataPromptNegative: blurry, low quality, deformed, photorealistic, scary, text, people
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

@@ -1,0 +1,12 @@
+type: still
+metadata:
+  name: square-portrait
+spec:
+  dataPrompt: |
+    Square close-up portrait of @Hero smiling, plain pale background, no text on clothing, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, dark, scary, text, logos
+  options:
+    outputFormat: png
+    aspectRatio: '1:1'
+status:
+  success: false

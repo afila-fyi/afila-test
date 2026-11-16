@@ -1,0 +1,19 @@
+type: scene
+metadata:
+  name: ambience-only
+spec:
+  dataPrompt: |
+    An empty ultra-wide establishing scene with no characters and no speech. All the storytelling is in the layered sound design. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors.
+  dataPromptNegative: people, characters, speech, dialogue, voices, singing, background music, soundtrack, subtitles, captions
+  shots:
+    - name: dawn-harbour
+      dataPrompt: |
+        Shot 1 (6s): Slow pan across an empty fishing harbour at dawn, mist on the water, moored boats rocking gently. SFX in layers: low foghorn far away, water lapping against the hull, creaking ropes, seagulls overhead. No speech. No background music.
+      dataPromptNegative: ''
+      duration: 6
+  options:
+    duration: 6
+    aspectRatio: '21:9'
+    resolution: 720p
+status:
+  success: false

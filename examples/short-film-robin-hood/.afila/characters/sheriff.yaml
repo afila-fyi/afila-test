@@ -1,0 +1,8 @@
+type: character
+metadata:
+  name: sheriff
+spec:
+  dataPrompt: A pompous middle-aged sheriff with a thin waxed moustache, plum-coloured velvet doublet with gold trim, a tall feathered hat, jewelled belt, sneering expression, storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style
+  dataPromptNegative: blurry, low quality, deformed, photorealistic, scary, text, logos
+status:
+  success: false

@@ -1,0 +1,8 @@
+type: character
+metadata:
+  name: robin
+spec:
+  dataPrompt: A lean young outlaw archer in his twenties, tousled brown hair, short beard, green hooded tunic with a brown leather belt, feathered cap, longbow across his back, confident half-smile, storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style
+  dataPromptNegative: blurry, low quality, deformed, photorealistic, scary, text, logos
+status:
+  success: false

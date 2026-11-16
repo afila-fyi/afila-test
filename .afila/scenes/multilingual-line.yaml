@@ -1,0 +1,19 @@
+type: scene
+metadata:
+  name: multilingual-line
+spec:
+  dataPrompt: |
+    @hero greets the camera in more than one language. Write each spoken line in the language it should be spoken in, in quotes, and name the language and the voice. Same voice for every line: a bright, young, warm girl's voice.
+  dataPromptNegative: dark, scary, blurry, low quality, background music, soundtrack, subtitles, captions
+  shots:
+    - name: greetings
+      dataPrompt: |
+        Shot 1 (6s): Medium shot of @hero waving in a sunny park. In a bright young warm girl's voice she says in Spanish: "¡Hola, amigos!" then in French: "Bonjour, tout le monde !" SFX: soft birdsong. No background music.
+      dataPromptNegative: ''
+      duration: 6
+  options:
+    duration: 6
+    aspectRatio: '4:3'
+    resolution: 480p
+status:
+  success: false

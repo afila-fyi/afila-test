@@ -1,0 +1,19 @@
+type: scene
+metadata:
+  name: continues-from-a
+spec:
+  dataPrompt: |
+    @hero and @sidekick set off along a sunny park path. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors.
+  dataPromptNegative: dark, scary, blurry, low quality, background music, soundtrack, subtitles, captions
+  shots:
+    - name: set-off
+      dataPrompt: |
+        Shot 1 (5s): Wide shot, @hero in her red hoodie and green cargo shorts walks down the park path with @sidekick trotting beside her, camera tracking alongside. SFX: footsteps on gravel, birdsong, jingling collar. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 5
+    aspectRatio: '16:9'
+    resolution: 480p
+status:
+  success: false

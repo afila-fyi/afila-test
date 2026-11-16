@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s002-bridge-meeting
+spec:
+  dataPrompt: |
+    Same log bridge, same dawn light, @robin in his green hooded tunic and feathered cap facing @little-john, a huge bald forester with a red beard and an oak quarterstaff. Storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style.
+  dataPromptNegative: dark, scary, blurry, low quality, text overlays, watermark, subtitles, background music
+  continuesFrom: s001-sherwood-dawn
+  shots:
+    - name: standoff
+      dataPrompt: |
+        Shot 1 (5s): Continuing directly from the previous shot, @robin halts mid-bridge as @little-john blocks the far end, staff planted. @little-john, a booming good-natured deep male voice, says: "Nobody crosses this bridge without paying the toll!" SFX: rushing stream, creaking log. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: reply
+      dataPrompt: |
+        Shot 2 (5s): Close-up of @robin in his green hooded tunic, a cheeky young confident male voice, replies with a grin: "Then you'll have to take it from me." He sets down his bow. SFX: rushing stream, wooden bow clack. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 480p
+status:
+  success: false

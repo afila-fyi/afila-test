@@ -1,0 +1,19 @@
+type: scene
+metadata:
+  name: voiceover-narration
+spec:
+  dataPrompt: |
+    A vertical storybook moment: an off-screen narrator tells the story while @snail crosses the frame. The narrator never appears on screen. Narrator voice, repeated verbatim: a warm, deep, unhurried male voice.
+  dataPromptNegative: dark, scary, blurry, low quality, background music, soundtrack, subtitles, captions, on-screen narrator
+  shots:
+    - name: crossing
+      dataPrompt: |
+        Shot 1 (8s): Low macro view of @snail inching along a mossy garden path after rain. Off-screen narrator, warm deep unhurried male voice, says: "It took the snail all morning to cross the path, and she was not in the least bit sorry." SFX: dripping leaves, faint wet squelch. No background music.
+      dataPromptNegative: ''
+      duration: 8
+  options:
+    duration: 8
+    aspectRatio: '3:4'
+    resolution: 720p
+status:
+  success: false

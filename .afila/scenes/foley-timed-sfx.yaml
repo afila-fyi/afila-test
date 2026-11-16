@@ -1,0 +1,29 @@
+type: scene
+metadata:
+  name: foley-timed-sfx
+spec:
+  dataPrompt: |
+    A square social clip where every beat has a specific sound effect cue, timed to the action. No speech.
+  dataPromptNegative: speech, dialogue, voices, background music, soundtrack, subtitles, captions, blurry, low quality
+  shots:
+    - name: knock
+      dataPrompt: |
+        Shot 1 (2s): Close-up of @hero's knuckles knocking on a wooden door. SFX exactly on each knock: three sharp wooden knocks. No background music.
+      dataPromptNegative: ''
+      duration: 2
+    - name: creak
+      dataPrompt: |
+        Shot 2 (2s): The door swings slowly open. SFX: long rusty hinge creak, then a soft thud as it stops. No background music.
+      dataPromptNegative: ''
+      duration: 2
+    - name: reveal
+      dataPrompt: |
+        Shot 3 (2s): @sidekick bursts out, tail wagging, jumping into @hero's arms. SFX: quick paw patter, happy bark, cloth rustle. No background music.
+      dataPromptNegative: ''
+      duration: 2
+  options:
+    duration: 6
+    aspectRatio: '1:1'
+    resolution: 480p
+status:
+  success: false

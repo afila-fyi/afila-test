@@ -1,0 +1,24 @@
+type: scene
+metadata:
+  name: two-speaker-dialogue
+spec:
+  dataPrompt: |
+    @hero and @nutkin argue happily over a single acorn on a garden wall. Voice bible, repeated verbatim before every line so each speaker keeps the same voice: @hero = a bright, young, warm girl's voice; @nutkin = a fast, squeaky, mischievous cartoon squirrel voice.
+  dataPromptNegative: dark, scary, blurry, low quality, background music, soundtrack, subtitles, captions, shouting
+  shots:
+    - name: question
+      dataPrompt: |
+        Shot 1 (5s): Medium two-shot on the garden wall. @hero, bright young warm girl's voice, asks: "Nutkin, is that my acorn?" @nutkin hugs the acorn. SFX: garden birds, soft leaves. No background music.
+      dataPromptNegative: ''
+      duration: 5
+    - name: answer
+      dataPrompt: |
+        Shot 2 (5s): Close-up on @nutkin, fast squeaky mischievous cartoon squirrel voice, replies: "Finders keepers!" @hero, bright young warm girl's voice, laughs: "Then I'm keeping you!" SFX: tiny scamper, laughter. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 10
+    aspectRatio: '16:9'
+    resolution: 480p
+status:
+  success: false

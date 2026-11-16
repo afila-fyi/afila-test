@@ -1,0 +1,12 @@
+type: still
+metadata:
+  name: archery-field
+spec:
+  dataPrompt: |
+    Wide view of a medieval archery tournament field in bright afternoon sun, striped tents with pennants, a cheering crowd of villagers, a straw target at the far end, a raised pavilion with a velvet-draped seat, @sheriff seated in the pavilion, storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style
+  dataPromptNegative: blurry, low quality, deformed, photorealistic, scary, text
+  options:
+    outputFormat: png
+    aspectRatio: '16:9'
+status:
+  success: false

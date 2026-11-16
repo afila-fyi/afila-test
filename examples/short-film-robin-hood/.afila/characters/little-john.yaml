@@ -1,0 +1,8 @@
+type: character
+metadata:
+  name: little-john
+spec:
+  dataPrompt: A huge broad-shouldered forester, bald head with a thick red beard, rust-brown tunic with rolled sleeves, a long oak quarterstaff in his hands, booming good-natured grin, storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style
+  dataPromptNegative: blurry, low quality, deformed, photorealistic, scary, text, logos
+status:
+  success: false

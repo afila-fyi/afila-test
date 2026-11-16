@@ -1,0 +1,20 @@
+type: scene
+metadata:
+  name: continues-from-b
+spec:
+  dataPrompt: |
+    Same park, same sunny afternoon, @hero in her red hoodie and green cargo shorts with @sidekick. ligne claire cartoon style, clean bold outlines, flat cel-shaded colors.
+  dataPromptNegative: dark, scary, blurry, low quality, background music, soundtrack, subtitles, captions
+  continuesFrom: continues-from-a
+  shots:
+    - name: discovery
+      dataPrompt: |
+        Shot 1 (5s): Continuing directly from the previous shot, @hero stops mid-stride and points ahead as @sidekick barks, camera keeps tracking and pushes in on her surprised face. SFX: footsteps stop, one sharp bark, birdsong. No background music.
+      dataPromptNegative: ''
+      duration: 5
+  options:
+    duration: 5
+    aspectRatio: '16:9'
+    resolution: 480p
+status:
+  success: false

@@ -1,0 +1,25 @@
+type: scene
+metadata:
+  name: s003-staff-fight
+spec:
+  dataPrompt: |
+    Same log bridge, same dawn light. @robin in his green hooded tunic and @little-john with his oak quarterstaff fight with staves on the narrow log. Storybook ink and watercolour illustration, bold ink outlines, warm painted colours, medieval folk-tale style.
+  dataPromptNegative: dark, scary, blurry, low quality, gore, blood, text overlays, watermark, subtitles, background music
+  continuesFrom: s002-bridge-meeting
+  shots:
+    - name: clash
+      dataPrompt: |
+        Shot 1 (4s): Continuing directly from the previous shot, @little-john swings his quarterstaff and @robin ducks and cartwheels over it. SFX: wooden staff whoosh, sharp clack of staves, rushing stream. No background music.
+      dataPromptNegative: ''
+      duration: 4
+    - name: splash
+      dataPrompt: |
+        Shot 2 (4s): @little-john's swing misses and @robin taps him off the log, he lands in the stream with a huge splash, then surfaces roaring with laughter in a booming good-natured deep male voice: "Well fought, lad!" SFX: big splash, rushing stream, deep laughter. No background music.
+      dataPromptNegative: ''
+      duration: 4
+  options:
+    duration: 8
+    aspectRatio: '16:9'
+    resolution: 480p
+status:
+  success: false

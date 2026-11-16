@@ -1,0 +1,12 @@
+type: still
+metadata:
+  name: ultrawide-establishing
+spec:
+  dataPrompt: |
+    Ultra-wide cinematic establishing view of a sunny park with a winding path, @Hero and @Sidekick tiny in the distance, ligne claire cartoon style, clean bold outlines, flat cel-shaded colors, European comic book illustration
+  dataPromptNegative: blurry, low quality, deformed, realistic, dark, scary
+  options:
+    outputFormat: png
+    aspectRatio: '21:9'
+status:
+  success: false
