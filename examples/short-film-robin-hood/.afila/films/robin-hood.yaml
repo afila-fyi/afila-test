@@ -1,0 +1,15 @@
+type: film
+metadata:
+  name: robin-hood
+spec:
+  scenes:
+    - s001-sherwood-dawn
+    - s002-bridge-meeting
+    - s003-staff-fight
+    - { scene: s004-tournament, transition: crossfade, transitionSeconds: 0.5 }
+    - s005-the-shot
+    - s006-escape
+  fadeIn: 1
+  fadeOut: 1.5
+status:
+  success: false

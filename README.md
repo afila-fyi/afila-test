@@ -54,6 +54,10 @@ Audio is always generated with the video; there is nothing to switch on. Direct 
 
 Voices are never required. To keep one character's timbre identical across scenes, add `.afila/voices/<name>.yaml` (`description`, optional `sampleLine` of at most 12 words, or `audioUrl` pointing to a 1-5s .wav/.mp3 you uploaded) and set `spec.voice: <name>` on the character. A voice without a sample is generated once (3 credits) before the scenes; if that fails, scenes fall back to the voice in the prompt. At most 3 voiced characters per scene. Sample: `Storyteller-voice` + `storyteller` + `voiced-storyteller` (6s, 480p: 5 credits).
 
+## Films (optional)
+
+A film stitches generated scenes, in order, into one video, at no credit cost. Add `.afila/films/<name>.yaml` with `spec.scenes` (scene names, or `{scene, transition: crossfade, transitionSeconds}`; crossfade is at most 1s) and optional `fadeIn` / `fadeOut` seconds. All scenes must share one aspect ratio and resolution, and the film is skipped with an error if any listed scene is not generated yet. Sample: [`examples/short-film-robin-hood`](examples/short-film-robin-hood/README.md).
+
 ## Agent workflow (screenplay → assets)
 
 - Install the **afila plugin** (skills + MCP server in one): `copilot plugin marketplace add afila-fyi/afila` then `copilot plugin install afila@afila` (Claude Code: `/plugin marketplace add afila-fyi/afila`, `/plugin install afila@afila`). Skills it provides: `screenplay-to-afila` (break a screenplay/story into characters, stills and scenes) and `afila-generate` (validate, push, submit, poll).
