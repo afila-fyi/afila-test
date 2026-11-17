@@ -18,7 +18,7 @@ screenplay.md ──(screenplay-to-afila skill)──► .afila/{characters,stil
 | OPEN SEA + LAMP ROOM | scene (2 shots, 10s) | `scenes/s02-storm.yaml` |
 | OPEN SEA – NIGHT | scene (2 shots, 10s, keyframe `first`) | `scenes/s03-rescue.yaml` |
 
-Estimated cost (720p): 2 characters (2) + 2 stills (4) + 3 scenes × 11 = **39 credits**.
+Estimated cost (720p): 2 characters (2) + 2 stills (4) + 3 scenes × 13 = **45 credits**.
 
 ## Run it
 
